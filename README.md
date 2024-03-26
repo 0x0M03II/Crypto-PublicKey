@@ -45,7 +45,7 @@ make
 ./crypto_pk
 ```
 ![RSA](screenshot.png)
-![Diffie-Hellman](screenshot2.png)
+![Diffie-Hellman](screenshot1.png)
 ## Testing
 There are two independent projects, RSA and Diffie-Hellman.  Within the main() function, you can comment or uncomment one or both of DiffieHellmanAssignment() and RSAAssignment().  For example, if you want to run just the RSA and don't want to wait for DH, comment out DiffieHellmanAssignment().
 
