@@ -71,11 +71,7 @@ void COSC583::RSA::relativePrimePrimers() {
     *  Without using a prime number generator (which is provide by the library
        that I used for this project, NTL), random 1024-bit ZZ numbers are 
        denerated and prime tested using my static prime utility method 
-       PrimeUtility::primalityTest()
-    
-    *  Note: I did use the built-in method GCD() since the directions did not
-       specify GCD as one of the routines that cannot be implemented using a 
-       library.  This built in is use nowhere else */
+       PrimeUtility::primalityTest() */
     
 
     ZZ p, q, n, phi_n;
@@ -97,7 +93,7 @@ void COSC583::RSA::relativePrimePrimers() {
         phi_n = (p - 1) * (q - 1);
 
         // Check if relatively prime
-        if (GCD(phi_n, e) == 1) {
+        if (PrimeUtility::pkgcd(phi_n, e) == to_ZZ(1)) {
             break;
         }
     }

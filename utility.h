@@ -28,6 +28,7 @@ class PrimeUtility {
         static ZZ modularExponentiation(const ZZ& base, const ZZ& exponent, const ZZ& modulus);
         static ZZ modMultiply(const ZZ& a, const ZZ& b, const ZZ& n);
         static bool primalityTest(const ZZ& prime);
+        static ZZ pkgcd(ZZ a, ZZ b);
         
         PrimeUtility() {}
 

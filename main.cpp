@@ -114,9 +114,9 @@ int main()
     // ZZ_p b = ZZ_p(4235880211405804673);
     // ZZ_p n = ZZ_p(12855544647099734480);
 
-    DiffieHellmanAssignment();
+    //DiffieHellmanAssignment();
 
-    //RSAAssignment();
+    RSAAssignment();
 
     return 0;
 }

@@ -2,6 +2,18 @@
 #include <NTL/lzz_pX.h>
 #include <openssl/aes.h>
 
+ZZ PrimeUtility::pkgcd(ZZ a, ZZ b) {
+    /* A very simple implementation of the normal Euclidean 
+       algorithm.  GCD(a, b) = GCD(b, a mod b).  Reapeat this
+       until b (or at least the value in position b) is 0 */
+
+    if (b == to_ZZ(0)) {
+        return a;
+    }
+
+    return pkgcd(b, a % b);
+}
+
 ZZ PrimeUtility::modularExponentiation(const ZZ& base, const ZZ& exponent, const ZZ& modulus)
 {
     /* Using the Algorithm provided in class, this routine keeps a running product
