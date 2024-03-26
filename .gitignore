@@ -1,0 +1,16 @@
+# Ignore binary files
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.out
+
+# Ignore object files
+*.o
+
+# Ignore VSCode folder
+.vscode/
+
+# Ignore .DS_Store on macOS
+.DS_Store
